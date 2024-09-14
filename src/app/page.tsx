@@ -27,7 +27,7 @@ export default function Home() {
     { id: 'contact', icon: Mail, label: 'Contact' },
   ]
 
-  const skills = ['React', 'Next.js', 'TypeScript', 'Node.js', 'GraphQL', 'Tailwind CSS', 'PostgreSQL', 'AWS']
+  const skills = ['React.js', 'Next.js', 'TypeScript', 'Node.js', 'mySQL', 'Tailwind CSS', 'SwiftUI', 'Swift', 'Python', 'Django', 'Firebase', 'Docker']
 
   const projects = [
     { title: 'E-commerce Platform', description: 'A full-stack online store with Next.js, GraphQL, and Stripe integration' },
