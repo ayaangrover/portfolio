@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root  {
+    --background: 229 100% 95%;
+    --foreground: 229 5% 10%;
+    --card: 229 50% 90%;
+    --card-foreground: 229 5% 15%;
+    --popover: 229 100% 95%;
+    --popover-foreground: 229 100% 10%;
+    --primary: 229 56% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 229 30% 70%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 191 30% 85%;
+    --muted-foreground: 229 5% 35%;
+    --accent: 191 30% 80%;
+    --accent-foreground: 229 5% 15%;
+    --destructive: 0 100% 31%;
+    --destructive-foreground: 229 5% 90%;
+    --border: 229 30% 50%;
+    --input: 229 30% 31%;
+    --ring: 229 56% 54%;
+    --radius: 1rem;
+  }
+  .dark  {
+    --background: 229 50% 10%;
+    --foreground: 229 5% 90%;
+    --card: 229 50% 10%;
+    --card-foreground: 229 5% 90%;
+    --popover: 229 50% 5%;
+    --popover-foreground: 229 5% 90%;
+    --primary: 229 56% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 229 30% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 191 30% 25%;
+    --muted-foreground: 229 5% 60%;
+    --accent: 191 30% 25%;
+    --accent-foreground: 229 5% 90%;
+    --destructive: 0 100% 31%;
+    --destructive-foreground: 229 5% 90%;
+    --border: 229 30% 31%;
+    --input: 229 30% 31%;
+    --ring: 229 56% 54%;
+    --radius: 1rem;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20;
+}
+
+.social-button {
+  @apply transition-colors duration-300;
+}
+
+.social-button.github:hover {
+  @apply bg-[##b80f0f] text-white border-[##b80f0f];
+}
+
+.social-button.linkedin:hover {
+  @apply bg-[#0077B5] text-white border-[#0077B5];
+}
+
+.social-button.twitter:hover {
+  @apply bg-[#1DA1F2] text-white border-[#1DA1F2];
+}
